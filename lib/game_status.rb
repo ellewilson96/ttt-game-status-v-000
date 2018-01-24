@@ -13,5 +13,5 @@ end
 end
 
 def full?(board)
-  position_taken?(board, index) == true
+  position_taken?(board) == true
 end
