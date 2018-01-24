@@ -17,3 +17,12 @@ def full?(board)
     i == " " || i.nil?
   end
 end
+
+def draw?(board)
+  if full? = true && won? = false
+    true
+  elsif full? = false && won? = false
+    false
+  else won? = true
+    false
+  end
