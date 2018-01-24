@@ -19,4 +19,4 @@ def won?(board)
       win_combination.select if position_1 == "X" && position_2 == "X" && position_3 == "X"
       end
     end
-  end
+  
