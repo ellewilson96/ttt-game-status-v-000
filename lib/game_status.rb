@@ -19,9 +19,9 @@ def full?(board)
 end
 
 def draw?(board)
-  if won?(board) && full?(board) == true
+  if won?(board) != true && full?(board) == true
     true
-  elsif full?(board) == false && won?(board)
+  elsif full?(board) == false && won?(board) == false
     false
   else won?(board) == true
     false
