@@ -28,6 +28,7 @@ def over?(board)
   elsif won?(board) != nil && full?(board) == true
     true
   elsif won?(board) != nil && full?(board) == false
+    true
   else
     false
   end
