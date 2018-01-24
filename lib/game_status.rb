@@ -26,3 +26,4 @@ def draw?(board)
   else won? == true
     false
   end
+end
