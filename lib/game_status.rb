@@ -13,5 +13,7 @@ end
 end
 
 def full?(board)
-  position_taken?(board) == true
+  board.none? do |i|
+    i == " " || i.nil?
+  end
 end
