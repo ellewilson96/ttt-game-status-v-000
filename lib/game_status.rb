@@ -12,6 +12,6 @@ WIN_COMBINATIONS.find do |win_combo|
 end
 end
 
-def full?
-  position_taken? == true
+def full?(board)
+  position_taken?(board, index) == true
 end
