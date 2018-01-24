@@ -21,3 +21,11 @@ end
 def draw?(board)
   won?(board) == nil && full?(board) == true
 end
+
+def over?(board)
+  if draw?(board) || won?(board) == true
+    true
+  else
+    false
+  end
+end
