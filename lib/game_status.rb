@@ -16,11 +16,9 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
-    win_combination.each do |win_index|
       win_index_1 = win_combination[0]
       win_index_2 = win_combination[1]
       win_index_3 = win_combination[2]
-      win_index_4 = win_combination [3]
 
       position_1 = board[win_index_1]
       puts win_index_1
@@ -30,7 +28,7 @@ def won?(board)
       puts win_index_3
 
       if position_1 == "X" && position_2 == "X" && position_3 == "X"
-        return win_combination
+        puts win_combination
       else
         false
       end
